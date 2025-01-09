@@ -1,6 +1,7 @@
 from sanrio import Sanrio
 from hellokittyfamily import HelloKittyFamily
 from kittywhite import KittyWhite
+from georgewhite import GeorgeWhite
 
 def test_kitty_white():
     kw = KittyWhite('apple pie', 'no mouth')
@@ -11,3 +12,8 @@ def test_kitty_white():
     assert isinstance(kw, Sanrio)
     assert isinstance(kw, HelloKittyFamily)
     assert isinstance(kw, KittyWhite)
+
+def test_george_white():
+    gw = GeorgeWhite('engineer')
+
+    assert gw.work() == 'Let\'s work with George!'

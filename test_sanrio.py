@@ -3,8 +3,9 @@ from hellokittyfamily import HelloKittyFamily
 from kittywhite import KittyWhite
 from georgewhite import GeorgeWhite
 from mimmykitty import MimmyKitty
-
+# assert means ture, making sure it matches the class
 def test_kitty_white():
+    #make sure to import in corret puncuation
     kw = KittyWhite('apple pie', 'no mouth')
 
     assert kw.location == 'United Kingdom'

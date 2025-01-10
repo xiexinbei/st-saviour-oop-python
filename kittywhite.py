@@ -6,6 +6,9 @@ class KittyWhite(HelloKittyFamily):
         self.favorite_food = favorite_food
         self.appearance = appearance
 
+    def __str__(self):
+       return f'KittyWhite(favorite_food: {self.favorite_food})'
+
 
     def help_others(self):
         return 'KittyWhite from ' + self.location + ' wants to make friends with you!'

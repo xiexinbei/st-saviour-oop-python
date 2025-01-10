@@ -9,6 +9,9 @@ class HelloKittyFamily(Sanrio):
         self.age = age
         self.personalities = personalities 
 
+    def __str__(self):
+       return f'HelloKittyFamily(name: {self.name})'
+
     def make_friends(self, friend: str):
         print(self.name + ' who lives in ' + self.location + ' is now friends with ' + friend)
 

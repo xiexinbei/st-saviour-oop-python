@@ -6,5 +6,8 @@ class MimmyKitty(HelloKittyFamily):
         self.outfit = outfit
         self.favorite_book = favorite_book
 
+    def __str__(self):
+       return f'MimmyKitty(outfit: {self.outfit})'
+
     def read_book(self):
         return('MimmyKitty wants to share book with you!')

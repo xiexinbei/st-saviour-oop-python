@@ -12,6 +12,7 @@ class HelloKittyFamily(Sanrio):
     def make_friends(self, friend: str):
         print(self.name + ' who lives in ' + self.location + ' is now friends with ' + friend)
 
-        
-
+    def add_themes(self, *args):
+        for arg in args:
+            self.themes.append(arg)
         
